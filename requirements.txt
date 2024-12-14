@@ -15,13 +15,13 @@ pdfplumber==0.9.0
 python-docx==0.8.11
 bcrypt==4.0.1
 pyyaml==6.0.2
-streamlit-lottie==0.0.5  # 修正
+streamlit-lottie==0.0.5
 lxml==4.9.3
 scipy==1.11.3
-SQLAlchemy              # 修正
-psycopg2-binary==2.9.6
+SQLAlchemy
+psycopg2==2.9.3 # psycopg2-binaryではなくpsycopg2を指定、バージョンは安定版
 pyjwt==2.8.0
-tensorflow==2.14.0
-torch==2.1.0
+tensorflow==2.15.0 # Tensorflowのバージョンを更新（Python 3.12互換性を考慮）
+torch==2.1.0 # torchは問題ないと仮定し一旦据え置き、必要に応じてバージョン変更
 transformers==4.36.1
-boto3>=1.26.0   
+boto3>=1.26.0
