@@ -1,0 +1,199 @@
+/* styles/custom.css */
+
+/* ---------------------------------------------------
+   1. 全体の基本スタイル
+----------------------------------------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------------------------------------------------
+   2. カラーテーマの定義
+----------------------------------------------------- */
+:root {
+    /* ダークテーマ */
+    --primary-color: #1e1e1e;
+    --secondary-color: #262730;
+    --background-color: #0e1117;
+    --text-color: #FAFAFA;
+    --accent-color: #4CAF50;
+    --error-color: #FF5252;
+    --info-color: #2196F3;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+}
+
+[data-theme="light"] {
+    --primary-color: #FFFFFF;
+    --secondary-color: #F0F0F0;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --accent-color: #4CAF50;
+    --error-color: #FF5252;
+    --info-color: #2196F3;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+}
+
+/* ---------------------------------------------------
+   3. ヘッダーとフッターのスタイル
+----------------------------------------------------- */
+header, footer {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+/* ---------------------------------------------------
+   4. サイドバーのスタイル
+----------------------------------------------------- */
+.sidebar .sidebar-content {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar .sidebar-content h2 {
+    color: var(--accent-color);
+}
+
+/* ---------------------------------------------------
+   5. ボタンのスタイル
+----------------------------------------------------- */
+button, .stButton button {
+    background-color: var(--accent-color) !important;
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .stButton button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+/* ---------------------------------------------------
+   6. フォームと入力フィールドのスタイル
+----------------------------------------------------- */
+input[type="text"], input[type="password"], textarea, select {
+    background-color: var(--secondary-color);
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+/* ---------------------------------------------------
+   7. テーブルのスタイル
+----------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid var(--secondary-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+/* ---------------------------------------------------
+   8. 通知メッセージのスタイル
+----------------------------------------------------- */
+.info-message {
+    background-color: var(--info-color);
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background-color: var(--success-color);
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: var(--error-color);
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.warning-message {
+    background-color: var(--warning-color);
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------
+   9. レスポンシブデザインの設定
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    .sidebar .sidebar-content {
+        padding: 15px;
+    }
+
+    button, .stButton button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+}
+
+/* ---------------------------------------------------
+   10. スクロールバーのカスタマイズ（オプション）
+----------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    border: 3px solid var(--secondary-color);
+}

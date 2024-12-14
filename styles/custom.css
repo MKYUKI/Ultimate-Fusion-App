@@ -1,0 +1,77 @@
+/* styles/custom.css */
+
+/* 全体のフォントと背景色を設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e1117;
+    color: #FAFAFA;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #262730;
+    padding: 10px 20px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+}
+
+/* サイドバーのスタイル */
+.css-1aumxhk {
+    background-color: #262730;
+}
+
+.css-1aumxhk .css-1v0mbdj {
+    color: #FAFAFA;
+}
+
+/* ボタンのスタイル */
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+}
+
+/* テキスト入力のスタイル */
+.stTextInput > div > div > input {
+    background-color: #262730;
+    color: #FAFAFA;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* データフレームのスタイル */
+.css-1aumxhk .stDataFrame table {
+    background-color: #262730;
+    color: #FAFAFA;
+}
+
+.css-1aumxhk .stDataFrame table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* カスタムフォントの適用 */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../assets/fonts/custom-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'CustomFont', sans-serif;
+    color: #4CAF50;
+}

@@ -1,0 +1,53 @@
+# config.yaml ファイル
+
+# 認証情報の設定
+cookie:
+  name: fusion_app_session
+  key: super_secret_cookie_key
+  expiry_days: 30
+
+preauthorized:
+  emails:
+    - example_user1@gmail.com
+    - example_user2@gmail.com
+
+# テーマの設定
+theme:
+  default: dark
+
+# ログインの設定
+login:
+  attempts_limit: 5
+  cooldown_time: 60  # クールダウン時間 (秒)
+
+# 管理者ユーザーの設定
+admin:
+  users:
+    - username: admin
+      password: hashed_admin_password
+      email: admin@example.com
+
+# OpenAI API 設定
+openai:
+  model: gpt-3.5-turbo
+  temperature: 0.7
+  max_tokens: 1500
+
+# Google Cloud 設定
+google_cloud:
+  text_to_speech:
+    voice:
+      language_code: en-US
+      name: en-US-Wavenet-D
+      ssml_gender: MALE
+
+# アプリケーション設定
+application:
+  name: Ultimate Fusion App
+  version: 1.0
+  debug_mode: false
+
+# API キー設定
+api_keys:
+  youtube: YOUR_YOUTUBE_API_KEY
+  replicate: YOUR_REPLICATE_API_TOKEN
