@@ -25,3 +25,4 @@ tensorflow==2.14.0  # TensorFlowバージョン修正
 torch==2.1.0
 transformers==4.36.1
 boto3>=1.26.0
+exifread==2.3.2  # 最新バージョン
