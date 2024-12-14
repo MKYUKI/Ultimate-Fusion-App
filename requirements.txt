@@ -19,9 +19,9 @@ streamlit-lottie==0.0.5
 lxml==4.9.3
 scipy==1.11.3
 SQLAlchemy
-psycopg2-binary==2.9.6  # psycopg2ではなくpsycopg2-binaryを指定
+psycopg2-binary==2.9.6
 pyjwt==2.8.0
-tensorflow==2.15.0 #tensorflowを更新(2.15.0は比較的新しいバージョンなのでpython3.12対応の可能性が高い)
-torch==2.1.0 # torchは一旦このバージョンで確認
+tensorflow==2.14.0  # TensorFlowバージョン修正
+torch==2.1.0
 transformers==4.36.1
 boto3>=1.26.0
